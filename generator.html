@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Blog Generator Free Unlimited - Best AI Blog Writer Tool</title>
+    <meta name="description" content="Generate unlimited blog posts with our free AI blog generator. Best AI blog writer with images, SEO optimization, and no sign-up required.">
+    <meta name="keywords" content="AI blog generator free unlimited, Best AI blog writer, AI blog generator with images, Blog writing AI free, AI article generator">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI BlogGen</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="generator.html" class="nav-link active">Generator</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle">🌙</button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Generator Main Section -->
+    <section class="generator-container">
+        <div class="container">
+            <form id="blogForm" class="generator-form">
+                <h1 class="section-header">Generate Your Blog Post</h1>
+                <div class="form-group">
+                    <label for="topic">Blog Topic:</label>
+                    <textarea id="topic" class="form-control" placeholder="Enter your blog topic here..."></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tone">Tone:</label>
+                        <select id="tone" class="form-control">
+                            <option value="informative">Informative</option>
+                            <option value="casual">Casual</option>
+                            <option value="professional">Professional</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="length">Approximate Length (words):</label>
+                        <select id="length" class="form-control">
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="1500">1500</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Advanced Options -->
+                <div class="advanced-options">
+                    <div class="advanced-toggle" id="advanced-toggle">
+                        <span>⚙️ Advanced Options</span>
+                        <span class="toggle-arrow">▼</span>
+                    </div>
+                    <div class="advanced-content" id="advanced-content">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="style">Writing Style:</label>
+                                <select id="style" class="form-control">
+                                    <option value="engaging">Engaging</option>
+                                    <option value="technical">Technical</option>
+                                    <option value="storytelling">Storytelling</option>
+                                    <option value="persuasive">Persuasive</option>
+                                    <option value="educational">Educational</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="audience">Target Audience:</label>
+                                <select id="audience" class="form-control">
+                                    <option value="general">General Public</option>
+                                    <option value="beginners">Beginners</option>
+                                    <option value="professionals">Professionals</option>
+                                    <option value="experts">Industry Experts</option>
+                                    <option value="students">Students</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="language">Language:</label>
+                                <select id="language" class="form-control">
+                                    <option value="english">English</option>
+                                    <option value="spanish">Spanish</option>
+                                    <option value="french">French</option>
+                                    <option value="german">German</option>
+                                    <option value="italian">Italian</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="format">Content Format:</label>
+                                <select id="format" class="form-control">
+                                    <option value="blog-post">Blog Post</option>
+                                    <option value="how-to-guide">How-to Guide</option>
+                                    <option value="listicle">Listicle</option>
+                                    <option value="review">Product Review</option>
+                                    <option value="comparison">Comparison</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="keywords">SEO Keywords (optional):</label>
+                            <input type="text" id="keywords" class="form-control" placeholder="Enter keywords separated by commas">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="include-images" checked>
+                                <span class="checkmark"></span>
+                                Include image suggestions
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="seo-optimize" checked>
+                                <span class="checkmark"></span>
+                                SEO optimize content
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="generate-btn">
+                    <span class="btn-text">🚀 Generate AI Blog Post</span>
+                    <span class="btn-loading" style="display: none;">
+                        <span class="loading-spinner"></span>
+                        Generating...
+                    </span>
+                </button>
+            </form>
+
+            <!-- Output Section -->
+            <div class="output-container">
+                <div class="output-header">
+                    <h2>Generated Content</h2>
+                    <div class="output-actions">
+                        <button class="action-btn" data-action="copy">Copy</button>
+                        <button class="action-btn" data-action="download">Download</button>
+                        <button class="action-btn" data-action="clear">Clear</button>
+                        <button class="action-btn" data-action="regenerate">Regenerate</button>
+                    </div>
+                </div>
+                <div class="output-content" id="output"></div>
+                <div class="word-count">Word count: 0</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
